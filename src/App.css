@@ -1,9 +1,9 @@
 .App {
-  padding: 20px;
+  padding: var(--tile);
 }
 
 details {
-  padding-left: 20px;
+  padding-left: var(--tile);
 }
 
 summary {

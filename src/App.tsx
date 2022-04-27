@@ -5,8 +5,7 @@ import allTrees from "./tree-data.json";
 type Tree = Omit<typeof allTrees[number], "(unranked)" | "Division" | "Class">;
 type TaxonomicRank = keyof Tree;
 
-// domain, kingdom, phylum, class, order, family, genus, and species
-
+// domain, kingdom, phylum, class, order, family, genus, species
 const taxonomies: Array<TaxonomicRank> = [
   "Kingdom",
   "Order",
@@ -35,15 +34,19 @@ const Taxonomy: FC<{ trees: Array<Tree>; rank: TaxonomicRank }> = (props) => {
 
         if (!subRank) {
           return (
-            <div style={{ paddingLeft: 20 }}>
-              <a href={taxon[rank].href}>{taxon[rank].value}</a>
+            <div>
+              <em style={{ paddingLeft: `var(--tile)` }}>
+                <a href={taxon[rank].href} title={taxon.Species.value}>{taxon[rank].value}</a>
+              </em>
             </div>
           );
         }
         return (
           <details open>
             <summary>
-              <a href={taxon[rank].href} target="_blank">{taxon[rank].value}</a>
+              <a href={taxon[rank].href} target="_blank">
+                {taxon[rank].value}
+              </a>
             </summary>
             <Taxonomy trees={treesInTaxon} rank={subRank} />
           </details>
