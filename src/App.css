@@ -1,3 +1,15 @@
+.App {
+  padding: 20px;
+}
+
 details {
   padding-left: 20px;
+}
+
+summary {
+  color: #ddd;
+}
+
+details:hover > summary {
+  color: red;
 }
