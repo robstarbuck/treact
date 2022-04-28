@@ -1,8 +1,24 @@
 :root {
   --indent: calc(var(--tile) * 4);
+  
+  --dark: #002c02;
+  --mid-dark: #2a592f;
+  --mid: #568b5d;
+  --mid-light: #84c18f;
+  --light: #b5f9c4;
+
+  --attention: #00f6cd;
+  --bg: #fffffc;
 }
 
-* {white-space: nowrap;}
+* {
+  white-space: nowrap;
+  color: var(--dark);
+}
+
+body {
+  background-color: var(--bg);
+}
 
 main {
   margin-top: var(--tile);
@@ -20,7 +36,12 @@ details::before {
   width: 1px;
   position: absolute;
   left: 3px;
-  border-left: 1px solid #ddd;
+  bottom: 0;
+  border-left: 1px solid var(--light);
+}
+
+details:hover::before {
+  border-left: 1px solid var(--mid-dark);
 }
 
 em {
@@ -28,7 +49,7 @@ em {
 }
 
 summary {
-  color: #ddd;
+  color: var(--mid-light);
 }
 
 a {
@@ -37,10 +58,9 @@ a {
   cursor: pointer;
 }
 
-details:hover > summary,
 details:hover > summary a,
-em:hover > a {
-  color: red;
+a:hover {
+  text-decoration: underline;
 }
 
 a:hover {
@@ -55,8 +75,8 @@ header {
   padding: var(--tile) 0 0;
   display: flex;
   z-index: 2;
-  background: white;
-  border-bottom: 1px solid #ddd;
+  background: var(--bg);
+  border-bottom: 1px solid var(--light);
 }
 
 header > button {
@@ -69,8 +89,7 @@ ol {
   all: unset;
   padding: var(--tile);
   padding-left: calc(var(--indent));
-  /* position: fixed; */
-  background: #FFFFFF;
+  background: var(--bg);
   z-index: 1;
 }
 
