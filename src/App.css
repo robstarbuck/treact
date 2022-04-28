@@ -44,18 +44,31 @@ details:hover::before {
   border-left: 1px solid var(--mid-dark);
 }
 
-em {
+div > a {
   padding-left: var(--indent);
+}
+
+div > a::before {
+  content: "▶";
 }
 
 summary {
   color: var(--mid-light);
 }
 
+div:not([title="Name"]) > details > summary:hover {
+  color: var(--dark);
+}
+
 a {
   all: unset;
   color: initial;
   cursor: pointer;
+  pointer-events: stroke;
+}
+
+[title="Name"] summary {
+  pointer-events: none;
 }
 
 details:hover > summary a,
@@ -115,3 +128,7 @@ button {
   padding: var(--indent);
 }
 
+i {
+  opacity: 0.25;
+  font-size: calc(var(--tile) / 2);
+}
