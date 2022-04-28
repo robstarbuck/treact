@@ -1,15 +1,98 @@
-.App {
-  padding: var(--tile);
+:root {
+  --indent: calc(var(--tile) * 4);
+}
+
+* {white-space: nowrap;}
+
+main {
+  margin-top: var(--tile);
 }
 
 details {
-  padding-left: var(--tile);
+  margin-left: var(--indent);
+  position: relative;
+}
+
+details::before {
+  content: '';
+  display: block;
+  height: calc(100% - var(--tile));
+  width: 1px;
+  position: absolute;
+  left: 3px;
+  border-left: 1px solid #ddd;
+}
+
+em {
+  padding-left: var(--indent);
 }
 
 summary {
   color: #ddd;
 }
 
-details:hover > summary {
+a {
+  all: unset;
+  color: initial;
+  cursor: pointer;
+}
+
+details:hover > summary,
+details:hover > summary a,
+em:hover > a {
   color: red;
 }
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: var(--tile);
+  left: var(--indent);
+  padding: var(--tile) 0 0;
+  display: flex;
+  z-index: 2;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header > button {
+  z-index: 2;
+  position: absolute;
+  opacity: 0.2;
+}
+
+ol {
+  all: unset;
+  padding: var(--tile);
+  padding-left: calc(var(--indent));
+  /* position: fixed; */
+  background: #FFFFFF;
+  z-index: 1;
+}
+
+li {
+  all: unset;
+  display: inline-block;
+  width: var(--indent);
+}
+
+li:first-child button {
+  cursor: unset;
+}
+
+button {
+  all: unset;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: calc(var(--tile) / 2);
+  text-transform: uppercase;
+}
+
+.App {
+  padding: var(--indent);
+}
+

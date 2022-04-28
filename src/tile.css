@@ -1,0 +1,24 @@
+/* tile.css 1.0.0 */
+
+:root {
+    --tile: 20px;
+}
+
+* {
+    font-size: calc(0.655 * var(--tile) * var(--tile-count, 1));
+    line-height: calc(var(--tile) * var(--tile-count, 1) * var(--tile-factor, 1));
+}
+
+h1 {
+    --tile-count: 3;
+    --tile-factor: 0.75;
+}
+
+h2 {
+    --tile-count: 2;
+    --tile-factor: 0.75;
+}
+
+h3 {
+    --tile-count: 1;
+}

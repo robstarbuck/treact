@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import "./App.css";
 import allTrees from "./tree-data.json";
 
@@ -17,7 +17,7 @@ const taxonomies: Array<TaxonomicRank> = [
 const Taxonomy: FC<{ trees: Array<Tree>; rank: TaxonomicRank }> = (props) => {
   const { trees, rank } = props;
 
-  const taxons = trees.reduce<Array<Tree>>((a, c) => {
+  const taxonomiesInRank = trees.reduce<Array<Tree>>((a, c) => {
     if (a.find((v) => v[rank].value === c[rank].value)) {
       return a;
     }
@@ -26,7 +26,7 @@ const Taxonomy: FC<{ trees: Array<Tree>; rank: TaxonomicRank }> = (props) => {
 
   return (
     <div title={rank}>
-      {taxons.map((taxon) => {
+      {taxonomiesInRank.map((taxon) => {
         const treesInTaxon = trees.filter(
           (t) => t[rank].value === taxon[rank].value
         );
@@ -35,7 +35,7 @@ const Taxonomy: FC<{ trees: Array<Tree>; rank: TaxonomicRank }> = (props) => {
         if (!subRank) {
           return (
             <div>
-              <em style={{ paddingLeft: `var(--tile)` }}>
+              <em>
                 <a href={taxon[rank].href} title={taxon.Species.value}>{taxon[rank].value}</a>
               </em>
             </div>
@@ -57,9 +57,34 @@ const Taxonomy: FC<{ trees: Array<Tree>; rank: TaxonomicRank }> = (props) => {
 };
 
 function App() {
+
+  const [startRank, setStartRank] = useState<TaxonomicRank>(taxonomies[0]);
+
+  const onSetStartRank = (rank: TaxonomicRank) => {
+    setStartRank(rank)
+  }
+
+  const parentTaxonomy = taxonomies[taxonomies.indexOf(startRank) - 1];
+  const curtailedTaxonomies = taxonomies.slice(taxonomies.indexOf(startRank))
+
   return (
     <div className="App">
-      <Taxonomy rank={taxonomies[0]} trees={allTrees} />
+      <header>
+        {parentTaxonomy && <button onClick={() => onSetStartRank(parentTaxonomy)}>
+          ...{parentTaxonomy}
+        </button>}
+        <ol>
+          {curtailedTaxonomies.map(taxonomy => 
+          <li>
+            <button onClick={() => onSetStartRank(taxonomy)}>
+              {taxonomy}
+            </button>
+          </li>)}
+        </ol>
+      </header>
+      <main>
+      <Taxonomy rank={curtailedTaxonomies[0]} trees={allTrees} />
+      </main>
     </div>
   );
 }
