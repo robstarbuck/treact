@@ -57,7 +57,7 @@ const Taxonomy: FC<{
         return (
           <details open={hasSubrank} title={title}>
             <summary>
-              <a href={taxon[rank].href} target="_blank">
+              <a href={taxon[rank].href} target="_blank" rel="noreferrer">
                 {taxon[rank].value}
               </a>
             </summary>
@@ -99,7 +99,7 @@ function App() {
     }
     window.addEventListener("keyup", onKeyup);
     return () => window.removeEventListener("keyup", onKeyup);
-  }, []);
+  }, [taxonomies]);
 
   const onSetStartRank = (rank: TaxonomicRank) => {
     setStartRank(rank);

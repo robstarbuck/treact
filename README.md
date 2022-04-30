@@ -1,6 +1,7 @@
 # Links
 
 https://en.wikipedia.org/wiki/Taxonomic_rank
+[Ensure CI = true locally](https://create-react-app.dev/docs/running-tests/#on-ci-servers)
 https://www.woodlandtrust.org.uk/blog/2018/12/which-trees-have-catkins-and-how-to-tell-them-apart/
 
 ---
