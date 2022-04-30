@@ -53,12 +53,11 @@ div > a::before {
 }
 
 summary {
+  display: inline list-item;
   color: var(--mid-light);
+  cursor: pointer;
 }
 
-div:not([title="Name"]) > details > summary:hover {
-  color: var(--dark);
-}
 
 a {
   all: unset;
@@ -84,7 +83,7 @@ header {
   position: fixed;
   top: 0;
   right: var(--tile);
-  left: var(--indent);
+  left: var(--tile);
   padding: var(--tile) 0 0;
   display: flex;
   z-index: 2;
@@ -116,7 +115,7 @@ li:first-child button {
   cursor: unset;
 }
 
-button {
+button, span {
   all: unset;
   font-weight: bold;
   cursor: pointer;
@@ -125,10 +124,37 @@ button {
 }
 
 .App {
-  padding: var(--indent);
+  padding: var(--indent) var(--tile);
 }
 
 i {
   opacity: 0.25;
   font-size: calc(var(--tile) / 2);
+}
+
+fieldset {
+  position: fixed;
+  bottom: var(--tile);
+  right: var(--tile);
+  padding: calc(var(--tile) / 2);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--tile) / 2);
+  border: 1px solid var(--light);
+  background: var(--bg);
+  z-index: 10;
+}
+
+fieldset label {
+  cursor: pointer;
+  text-align: right;
+}
+
+[type="radio"] {
+  cursor: pointer;
+  accent-color: var(--mid);
+}
+
+fieldset > legend {
+  display: contents;
 }
