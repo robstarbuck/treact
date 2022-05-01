@@ -1,6 +1,8 @@
 import { FC, useEffect, useState } from "react";
 import "./App.css";
 import allTrees from "./tree-data.json";
+import {ReactComponent as Logo} from './logo.svg'
+import pkg from '../package.json'
 
 type Tree = Omit<typeof allTrees[number], "(unranked)" | "Division" | "Class">;
 type TaxonomicRank = keyof Tree;
@@ -109,7 +111,10 @@ function App() {
   const curtailedTaxonomies = taxonomies.slice(taxonomies.indexOf(startRank));
 
   return (
-    <div className="App">
+    <main className="App">
+      <a href={pkg.repository.url} target="_blank" rel="noreferrer">
+        <Logo />
+      </a>
       <header>
         {nonActiveTaxonomy && (
           <button onClick={() => onSetStartRank(nonActiveTaxonomy)}>
@@ -125,6 +130,14 @@ function App() {
             </li>
           ))}
         </ol>
+      </header>
+
+      <div>
+        <Taxonomy
+          taxonomies={taxonomies}
+          rank={curtailedTaxonomies[0]}
+          trees={allTrees}
+        />
         <fieldset>
           <label>
             Name
@@ -143,15 +156,8 @@ function App() {
             />
           </label>
         </fieldset>
-      </header>
-      <main>
-        <Taxonomy
-          taxonomies={taxonomies}
-          rank={curtailedTaxonomies[0]}
-          trees={allTrees}
-        />
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }
 

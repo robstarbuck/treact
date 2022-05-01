@@ -1,5 +1,6 @@
 :root {
   --indent: calc(var(--tile) * 4);
+  --logo-size: var(--tile);
   
   --dark: #002c02;
   --mid-dark: #2a592f;
@@ -133,7 +134,8 @@ i {
 }
 
 fieldset {
-  position: fixed;
+  float: right;
+  position: sticky;
   bottom: var(--tile);
   right: var(--tile);
   padding: calc(var(--tile) / 2);
@@ -157,4 +159,11 @@ fieldset label {
 
 fieldset > legend {
   display: contents;
+}
+
+svg {
+  position: fixed;
+  top: calc(var(--tile) + var(--indent));
+  right: var(--tile);
+  z-index: 10;
 }
