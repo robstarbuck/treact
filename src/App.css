@@ -1,3 +1,9 @@
+body {
+  padding: 40px;
+}
 details {
-  padding-left: 20px;
+  padding-left: 40px;
+}
+summary::marker {
+  color: lightblue;
 }
