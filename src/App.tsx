@@ -33,6 +33,8 @@ const Taxonomy: FC<TaxonomyProps> = (props) => {
     <div>
       {/* Loop through the taxa in the rank */}
       {taxaInRank.map((taxon) => {
+        // Crucially we are only passing the taxa of this rank to the next Taxonomy
+        // Without this filter, the component will call itself indefinitely
         const childrenOfTaxon = children.filter(
           (t) => t[rank] === taxon[rank]
         );
