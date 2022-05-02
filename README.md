@@ -10,7 +10,7 @@
 
 # Treact
 
-A [demo](https://robstarbuck.github.io/treact/) exploring recursive functions in react.
+A demo exploring recursive functions in react.
 
 # Links
 
