@@ -109,7 +109,7 @@ function App() {
     setStartRank(rank);
   };
 
-  const nonActiveTaxonomy = taxonomies.at(taxonomies.indexOf(startRank) - 1);
+  const nonActiveTaxonomy = taxonomies[taxonomies.indexOf(startRank) - 1];
   const curtailedTaxonomies = taxonomies.slice(taxonomies.indexOf(startRank));
 
   return (
