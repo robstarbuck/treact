@@ -1,11 +1,16 @@
 import { FC, useEffect, useState } from "react";
 import "./App.css";
-import allTrees from "./tree-data.json";
-import {ReactComponent as Logo} from './logo.svg'
+import allTrees from "./data.json";
+import { ReactComponent as Logo } from './logo.svg'
 import pkg from '../package.json'
 
-type Tree = Omit<typeof allTrees[number], "(unranked)" | "Division" | "Class">;
+type Tree = typeof allTrees[number];
 type TaxonomicRank = keyof Tree;
+type TaxonomyProps = {
+  children: Array<Tree>;
+  taxonomies: Array<TaxonomicRank>;
+  rank: TaxonomicRank;
+}
 
 // domain, kingdom, phylum, class, order, family, genus, species
 
@@ -25,18 +30,14 @@ const taxaBySpecies: Array<TaxonomicRank> = [
   "Species",
 ];
 
-const Taxonomy: FC<{
-  trees: Array<Tree>;
-  taxonomies: Array<TaxonomicRank>;
-  rank: TaxonomicRank;
-}> = (props) => {
-  const { trees, taxonomies, rank } = props;
+const Taxonomy: FC<TaxonomyProps> = (props) => {
+  const { children, taxonomies, rank } = props;
 
   const parentTaxa = (tree: Tree) => {
     return taxonomies.slice(0, taxonomies.indexOf(rank)).map((t) => tree[t]);
   }
 
-  const taxaInRank = trees.reduce<Array<Tree>>((a, c) => {
+  const taxaInRank = children.reduce<Array<Tree>>((a, c) => {
     if (a.find((v) => v[rank].value === c[rank].value)) {
       return a;
     }
@@ -46,10 +47,10 @@ const Taxonomy: FC<{
   return (
     <div>
       {taxaInRank.map((taxon) => {
-        const treesInTaxon = trees.filter(
+        const childrenOfTaxon = children.filter(
           (t) => t[rank].value === taxon[rank].value
         );
-        const subRank = taxonomies[taxonomies.indexOf(rank) + 1];
+        const subRank = taxonomies.at(taxonomies.indexOf(rank) + 1);
         const hasSubrank = subRank !== undefined;
         const title = parentTaxa(taxon)
           .map((t) => t.value)
@@ -66,9 +67,10 @@ const Taxonomy: FC<{
             {hasSubrank && (
               <Taxonomy
                 taxonomies={taxonomies}
-                trees={treesInTaxon}
                 rank={subRank}
-              />
+              >
+                {childrenOfTaxon}
+              </Taxonomy>
             )}
           </details>
         );
@@ -107,7 +109,7 @@ function App() {
     setStartRank(rank);
   };
 
-  const nonActiveTaxonomy = taxonomies[taxonomies.indexOf(startRank) - 1];
+  const nonActiveTaxonomy = taxonomies.at(taxonomies.indexOf(startRank) - 1);
   const curtailedTaxonomies = taxonomies.slice(taxonomies.indexOf(startRank));
 
   return (
@@ -136,8 +138,9 @@ function App() {
         <Taxonomy
           taxonomies={taxonomies}
           rank={curtailedTaxonomies[0]}
-          trees={allTrees}
-        />
+        >
+          {allTrees}
+        </Taxonomy>
         <fieldset>
           <label>
             Name

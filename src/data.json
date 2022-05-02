@@ -20,7 +20,10 @@
       "value": "Betulaceae",
       "href": "https://en.wikipedia.org/wiki/Betulaceae"
     },
-    "Genus": { "value": "Alnus", "href": "https://en.wikipedia.org/wiki/Alder" }
+    "Genus": {
+      "value": "Alnus",
+      "href": "https://en.wikipedia.org/wiki/Alder"
+    }
   },
   {
     "Name": {
@@ -121,7 +124,10 @@
       "value": "Fagaceae",
       "href": "https://en.wikipedia.org/wiki/Fagaceae"
     },
-    "Genus": { "value": "Fagus", "href": "https://en.wikipedia.org/wiki/Beech" }
+    "Genus": {
+      "value": "Fagus",
+      "href": "https://en.wikipedia.org/wiki/Beech"
+    }
   },
   {
     "Name": {
@@ -222,7 +228,10 @@
       "value": "Rosaceae",
       "href": "https://en.wikipedia.org/wiki/Rosaceae"
     },
-    "Genus": { "value": "Malus", "href": "https://en.wikipedia.org/wiki/Malus" }
+    "Genus": {
+      "value": "Malus",
+      "href": "https://en.wikipedia.org/wiki/Malus"
+    }
   },
   {
     "Name": {
@@ -323,7 +332,10 @@
       "value": "Sapindaceae",
       "href": "https://en.wikipedia.org/wiki/Sapindaceae"
     },
-    "Genus": { "value": "Acer", "href": "https://en.wikipedia.org/wiki/Maple" }
+    "Genus": {
+      "value": "Acer",
+      "href": "https://en.wikipedia.org/wiki/Maple"
+    }
   },
   {
     "Name": {
@@ -520,18 +532,6 @@
       "value": "Plantae",
       "href": "https://en.wikipedia.org/wiki/Plant"
     },
-    "(unranked)": {
-      "value": "Gymnosperms",
-      "href": "https://en.wikipedia.org/wiki/Gymnosperm"
-    },
-    "Division": {
-      "value": "Pinophyta",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
-    "Class": {
-      "value": "Pinopsida",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
     "Order": {
       "value": "Pinales",
       "href": "https://en.wikipedia.org/wiki/Pinales"
@@ -592,7 +592,10 @@
       "value": "Fagaceae",
       "href": "https://en.wikipedia.org/wiki/Fagaceae"
     },
-    "Genus": { "value": "Quercus", "href": "https://en.wikipedia.org/wiki/Oak" }
+    "Genus": {
+      "value": "Quercus",
+      "href": "https://en.wikipedia.org/wiki/Oak"
+    }
   },
   {
     "Name": {
@@ -633,18 +636,6 @@
       "value": "Plantae",
       "href": "https://en.wikipedia.org/wiki/Plant"
     },
-    "(unranked)": {
-      "value": "Gymnosperms",
-      "href": "https://en.wikipedia.org/wiki/Gymnosperm"
-    },
-    "Division": {
-      "value": "Pinophyta",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
-    "Class": {
-      "value": "Pinopsida",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
     "Order": {
       "value": "Pinales",
       "href": "https://en.wikipedia.org/wiki/Pinales"
@@ -653,7 +644,10 @@
       "value": "Pinaceae",
       "href": "https://en.wikipedia.org/wiki/Pinaceae"
     },
-    "Genus": { "value": "Pinus", "href": "https://en.wikipedia.org/wiki/Pine" }
+    "Genus": {
+      "value": "Pinus",
+      "href": "https://en.wikipedia.org/wiki/Pine"
+    }
   },
   {
     "Name": {
@@ -676,7 +670,10 @@
       "value": "Fagaceae",
       "href": "https://en.wikipedia.org/wiki/Fagaceae"
     },
-    "Genus": { "value": "Quercus", "href": "https://en.wikipedia.org/wiki/Oak" }
+    "Genus": {
+      "value": "Quercus",
+      "href": "https://en.wikipedia.org/wiki/Oak"
+    }
   },
   {
     "Name": {
@@ -777,7 +774,10 @@
       "value": "Sapindaceae",
       "href": "https://en.wikipedia.org/wiki/Sapindaceae"
     },
-    "Genus": { "value": "Acer", "href": "https://en.wikipedia.org/wiki/Maple" }
+    "Genus": {
+      "value": "Acer",
+      "href": "https://en.wikipedia.org/wiki/Maple"
+    }
   },
   {
     "Name": {
@@ -904,7 +904,10 @@
       "value": "Ulmaceae",
       "href": "https://en.wikipedia.org/wiki/Ulmaceae"
     },
-    "Genus": { "value": "Ulmus", "href": "https://en.wikipedia.org/wiki/Elm" }
+    "Genus": {
+      "value": "Ulmus",
+      "href": "https://en.wikipedia.org/wiki/Elm"
+    }
   },
   {
     "Name": {
@@ -919,18 +922,6 @@
       "value": "Plantae",
       "href": "https://en.wikipedia.org/wiki/Plant"
     },
-    "(unranked)": {
-      "value": "Gymnosperms",
-      "href": "https://en.wikipedia.org/wiki/Gymnosperm"
-    },
-    "Division": {
-      "value": "Pinophyta",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
-    "Class": {
-      "value": "Pinopsida",
-      "href": "https://en.wikipedia.org/wiki/Conifer"
-    },
     "Order": {
       "value": "Pinales",
       "href": "https://en.wikipedia.org/wiki/Pinales"
@@ -939,6 +930,9 @@
       "value": "Taxaceae",
       "href": "https://en.wikipedia.org/wiki/Taxaceae"
     },
-    "Genus": { "value": "Taxus", "href": "https://en.wikipedia.org/wiki/Taxus" }
+    "Genus": {
+      "value": "Taxus",
+      "href": "https://en.wikipedia.org/wiki/Taxus"
+    }
   }
 ]
