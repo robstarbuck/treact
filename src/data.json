@@ -1,0 +1,254 @@
+[
+  {
+    "Species": "Alnus glutinosa",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Betulaceae",
+    "Genus": "Alnus"
+  },
+  {
+    "Species": "Frangula alnus",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rhamnaceae",
+    "Genus": "Frangula"
+  },
+  {
+    "Species": "Fraxinus excelsior",
+    "Kingdom": "Plantae",
+    "Order": "Lamiales",
+    "Family": "Oleaceae",
+    "Genus": "Fraxinus"
+  },
+  {
+    "Species": "Populus tremula",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Populus"
+  },
+  {
+    "Species": "Fagus sylvatica",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Fagaceae",
+    "Genus": "Fagus"
+  },
+  {
+    "Species": "Prunus padus",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Prunus"
+  },
+  {
+    "Species": "Populus nigra",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Populus"
+  },
+  {
+    "Species": "Prunus spinosa",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Prunus"
+  },
+  {
+    "Species": "Malus sylvestris",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Malus"
+  },
+  {
+    "Species": "Cornus sanguinea",
+    "Kingdom": "Plantae",
+    "Order": "Cornales",
+    "Family": "Cornaceae",
+    "Genus": "Cornus"
+  },
+  {
+    "Species": "Betula pubescens",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Betulaceae",
+    "Genus": "Betula"
+  },
+  {
+    "Species": "Sambucus nigra",
+    "Kingdom": "Plantae",
+    "Order": "Dipsacales",
+    "Family": "Adoxaceae",
+    "Genus": "Sambucus"
+  },
+  {
+    "Species": "Acer campestre",
+    "Kingdom": "Plantae",
+    "Order": "Sapindales",
+    "Family": "Sapindaceae",
+    "Genus": "Acer"
+  },
+  {
+    "Species": "Salix caprea",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Salix"
+  },
+  {
+    "Species": "Salix cinerea",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Salix"
+  },
+  {
+    "Species": "Viburnum opulus",
+    "Kingdom": "Plantae",
+    "Order": "Dipsacales",
+    "Family": "Adoxaceae",
+    "Genus": "Viburnum"
+  },
+  {
+    "Species": "Crataegus monogyna",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Crataegus"
+  },
+  {
+    "Species": "Corylus avellana",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Betulaceae",
+    "Genus": "Corylus"
+  },
+  {
+    "Species": "Carpinus betulus",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Betulaceae",
+    "Genus": "Carpinus"
+  },
+  {
+    "Species": "Aesculus hippocastanum",
+    "Kingdom": "Plantae",
+    "Order": "Sapindales",
+    "Family": "Sapindaceae",
+    "Genus": "Aesculus"
+  },
+  {
+    "Species": "Juniperus communis",
+    "Kingdom": "Plantae",
+    "Order": "Pinales",
+    "Family": "Cupressaceae",
+    "Genus": "Juniperus"
+  },
+  {
+    "Species": "Salix viminalis",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Salix"
+  },
+  {
+    "Species": "Quercus robur",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Fagaceae",
+    "Genus": "Quercus"
+  },
+  {
+    "Species": "Sorbus aucuparia",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Sorbus"
+  },
+  {
+    "Species": "Pinus sylvestris",
+    "Kingdom": "Plantae",
+    "Order": "Pinales",
+    "Family": "Pinaceae",
+    "Genus": "Pinus"
+  },
+  {
+    "Species": "Quercus petraea",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Fagaceae",
+    "Genus": "Quercus"
+  },
+  {
+    "Species": "Betula pendula",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Betulaceae",
+    "Genus": "Betula"
+  },
+  {
+    "Species": "Euonymus europaeus",
+    "Kingdom": "Plantae",
+    "Order": "Celastrales",
+    "Family": "Celastraceae",
+    "Genus": "Euonymus"
+  },
+  {
+    "Species": "Castanea sativa",
+    "Kingdom": "Plantae",
+    "Order": "Fagales",
+    "Family": "Fagaceae",
+    "Genus": "Castanea"
+  },
+  {
+    "Species": "Acer pseudoplatanus",
+    "Kingdom": "Plantae",
+    "Order": "Sapindales",
+    "Family": "Sapindaceae",
+    "Genus": "Acer"
+  },
+  {
+    "Species": "Viburnum lantana",
+    "Kingdom": "Plantae",
+    "Order": "Dipsacales",
+    "Family": "Adoxaceae",
+    "Genus": "Viburnum"
+  },
+  {
+    "Species": "Populus alba",
+    "Kingdom": "Plantae",
+    "Order": "Malpighiales",
+    "Family": "Salicaceae",
+    "Genus": "Populus"
+  },
+  {
+    "Species": "Sorbus aria",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Sorbus"
+  },
+  {
+    "Species": "Prunus avium",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Rosaceae",
+    "Genus": "Prunus"
+  },
+  {
+    "Species": "Ulmus glabra",
+    "Kingdom": "Plantae",
+    "Order": "Rosales",
+    "Family": "Ulmaceae",
+    "Genus": "Ulmus"
+  },
+  {
+    "Species": "Taxus baccata",
+    "Kingdom": "Plantae",
+    "Order": "Pinales",
+    "Family": "Taxaceae",
+    "Genus": "Taxus"
+  }
+]
