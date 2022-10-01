@@ -128,6 +128,8 @@ button, span {
   padding: var(--indent) var(--tile);
 }
 
+
+
 i {
   opacity: 0.25;
   font-size: calc(var(--tile) / 2);
@@ -161,9 +163,10 @@ fieldset > legend {
   display: contents;
 }
 
-svg {
+.App > a {
   position: fixed;
   top: calc(var(--tile) + var(--indent));
   right: var(--tile);
+  height: var(--tile);
   z-index: 10;
 }
